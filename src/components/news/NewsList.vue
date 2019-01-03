@@ -38,11 +38,23 @@
         </a>
       </li>
     </ul>
+
+    <!-- 这是评论区 -->
+    <comment-box></comment-box>
+
+
   </div>
 </template>
 
 <script>
-export default {};
+import comments from '../subcomponents/comment'
+
+export default {
+    // 注册子组件
+    components:{
+        "comment-box":comments
+    }
+};
 </script>
 
 <style lang="scss" scoped>
